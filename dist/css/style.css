@@ -1,0 +1,182 @@
+/* Styles personnalisés pour le portfolio */
+
+/* Section Hero */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 120px 0;
+    margin-top: -56px; /* Pour compenser la navbar */
+}
+
+/* Icônes de compétences */
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0d6efd;
+}
+
+/* Projets en vedette */
+.featured-project {
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.featured-project:hover {
+    transform: translateY(-10px);
+}
+
+/* Section témoignages */
+.testimonial {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 40px 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Bouton d'appel à l'action */
+.cta-button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Styles pour la page contact */
+.contact-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/400') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    margin-top: -56px; /* Pour compenser la navbar */
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d6efd;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-3px);
+    color: white;
+}
+
+.captcha-container {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+.map-container {
+    height: 400px;
+    width: 100%;
+}
+.map-container {
+    height: 400px;
+    width: 100%;
+}
+
+/* Styles pour la page À propos */
+.profile-image {
+    border: 10px solid #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-period {
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.timeline-tags {
+    margin: 0 -5px;
+}
+
+.timeline-tags li {
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin: 5px;
+    display: inline-block;
+}
+
+.interest-icon, .prof-skill .skill-icon {
+    font-size: 2rem;
+    color: #0d6efd;
+}
+
+.skill-item .progress {
+    height: 8px;
+    background-color: #e9ecef;
+}
+
+.skill-item .progress-bar {
+    background-color: #0d6efd;
+}
+
+.skill-percentage {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.prof-skill {
+    transition: transform 0.3s ease;
+}
+
+.prof-skill:hover {
+    transform: translateY(-5px);
+}
+
+.interest-item {
+    transition: transform 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: translateY(-5px);
+}

@@ -1,0 +1,7 @@
+[build]
+  publish = "dist"         # ou "docs" si vous préférez
+  command = "npm run build"  # ou "npx eleventy"
+
+[context.production.environment]
+  NODE_VERSION = "18"
+  ELEVENTY_ENV = "production"

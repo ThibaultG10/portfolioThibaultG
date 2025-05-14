@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projets – Thibault Guillonneau</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet">
+  <!-- ton CSS perso -->
+  <link href="/css/style.css" rel="stylesheet">
+  <link rel="icon" href="/images/Logo_TG.png" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/">Thibault Guillonneau</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link " href="/">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link " href="/about/">À propos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/projects/">Projets</a></li>
+        <li class="nav-item"><a class="nav-link " href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <main class="pt-5">
+    
+   <!-- En-tête de la page Projets -->
+    <header class="projects-header py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mt-5 pt-3">Mes Projets</h1>
+            <p class="lead mb-0">Découvrez une sélection de mes réalisations techniques</p>
+        </div>
+    </header>
+
+    <!-- Section filtres de projets -->
+    <section class="filter-section py-4 bg-white">
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap">
+                <button class="btn btn-outline-primary m-2 filter-btn active" data-filter="all">Tous</button>
+                <button class="btn btn-outline-primary m-2 filter-btn" data-filter="web">Développement Web</button>
+                <button class="btn btn-outline-primary m-2 filter-btn" data-filter="reseau">Réseaux & Systèmes</button>
+                <button class="btn btn-outline-primary m-2 filter-btn" data-filter="securite">Sécurité</button>
+                <button class="btn btn-outline-primary m-2 filter-btn" data-filter="cloud">Cloud</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section class="projects-gallery py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Projet 1 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="web">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Plateforme E-learning">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Serveur d'une Entreprise</h5>
+                                <span class="badge bg-primary">Web</span>
+                            </div>
+                            <p class="card-text">Projet d'adminsitration d'un Serveur Windows 22 d'une entreprise.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">WS22</span>
+                                <span class="badge bg-light text-dark me-1">AGDLP</span>
+                                <span class="badge bg-light text-dark me-1">AD DS</span>
+                                <span class="badge bg-light text-dark me-1">DNS</span>
+                                <span class="badge bg-light text-dark">DHCP</span>
+                                <span class="badge bg-light text-dark">PowerShell</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="reseau">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Infrastructure Réseau">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Infrastructure Réseau</h5>
+                                <span class="badge bg-success">Réseaux</span>
+                            </div>
+                            <p class="card-text">Mise en place d'une infrastructure réseau complète pour une PME avec configuration des VLANs et politiques de sécurité.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">Cisco</span>
+                                <span class="badge bg-light text-dark me-1">VLANs</span>
+                                <span class="badge bg-light text-dark me-1">Firewall</span>
+                                <span class="badge bg-light text-dark">DHCP</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="web">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Site E-commerce">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Site E-commerce</h5>
+                                <span class="badge bg-primary">Web</span>
+                            </div>
+                            <p class="card-text">Boutique en ligne avec système de paiement sécurisé, gestion des stocks et interface administrateur.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">WordPress</span>
+                                <span class="badge bg-light text-dark me-1">WooCommerce</span>
+                                <span class="badge bg-light text-dark me-1">PHP</span>
+                                <span class="badge bg-light text-dark">Stripe</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="securite">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Audit de Sécurité">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Audit de Sécurité</h5>
+                                <span class="badge bg-danger">Sécurité</span>
+                            </div>
+                            <p class="card-text">Réalisation d'un audit complet de sécurité pour une entreprise avec identification des vulnérabilités et recommandations.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">Kali Linux</span>
+                                <span class="badge bg-light text-dark me-1">Nmap</span>
+                                <span class="badge bg-light text-dark me-1">Metasploit</span>
+                                <span class="badge bg-light text-dark">Wireshark</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal4">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="cloud">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Migration vers le Cloud">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Migration vers le Cloud</h5>
+                                <span class="badge bg-info">Cloud</span>
+                            </div>
+                            <p class="card-text">Migration d'une infrastructure on-premise vers AWS avec mise en place d'une architecture scalable et sécurisée.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">AWS</span>
+                                <span class="badge bg-light text-dark me-1">EC2</span>
+                                <span class="badge bg-light text-dark me-1">S3</span>
+                                <span class="badge bg-light text-dark">Lambda</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal5">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="reseau">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Système de Surveillance">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Système de Surveillance</h5>
+                                <span class="badge bg-success">Réseaux</span>
+                            </div>
+                            <p class="card-text">Mise en place d'un système de monitoring réseau avec alertes et tableaux de bord pour analyser les performances.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">Nagios</span>
+                                <span class="badge bg-light text-dark me-1">Grafana</span>
+                                <span class="badge bg-light text-dark me-1">Prometheus</span>
+                                <span class="badge bg-light text-dark">SNMP</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#projectModal6">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals pour les détails des projets -->
+    <!-- Modal Projet 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Plateforme E-learning</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="/api/placeholder/500/300" class="img-fluid rounded" alt="Plateforme E-learning">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Description du projet</h6>
+                            <p>Conception et développement d'une plateforme interactive pour la formation en ligne avec suivi de progression et certification. Cette plateforme permet aux formateurs de créer des cours structurés et aux étudiants de suivre leur avancement.</p>
+                            
+                            <h6 class="fw-bold mt-4">Technologies utilisées</h6>
+                            <ul>
+                                <li>HTML5, CSS3, JavaScript pour le frontend</li>
+                                <li>PHP et MySQL pour le backend</li>
+                                <li>Framework Bootstrap pour le design responsive</li>
+                                <li>API de paiement pour les abonnements</li>
+                                <li>Système de génération de certificats PDF</li>
+                            </ul>
+                            
+                            <h6 class="fw-bold mt-4">Ma contribution</h6>
+                            <p>J'ai été responsable de l'architecture globale du projet, du développement backend et de l'intégration des systèmes de paiement et de certification.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h6 class="fw-bold">Défis et solutions</h6>
+                        <p>Le principal défi était de créer une interface intuitive pour les formateurs non techniques. J'ai développé un système de glisser-déposer pour la création de cours et implémenté un éditeur WYSIWYG personnalisé.</p>
+                        
+                        <h6 class="fw-bold mt-4">Résultats</h6>
+                        <p>La plateforme est utilisée par plus de 500 étudiants et 15 formateurs. Le taux de complétion des cours a augmenté de 45% par rapport à la solution précédente.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Infrastructure Réseau</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="/api/placeholder/500/300" class="img-fluid rounded" alt="Infrastructure Réseau">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Description du projet</h6>
+                            <p>Conception et mise en place d'une infrastructure réseau complète pour une PME de 50 employés, avec configuration des VLANs, routage, stratégies de sécurité et redondance.</p>
+                            
+                            <h6 class="fw-bold mt-4">Technologies utilisées</h6>
+                            <ul>
+                                <li>Équipements Cisco (routeurs, switches)</li>
+                                <li>Configuration des VLANs pour segmentation</li>
+                                <li>Pare-feu Fortinet</li>
+                                <li>Services DHCP, DNS et Active Directory</li>
+                                <li>VPN pour accès distant sécurisé</li>
+                            </ul>
+                            
+                            <h6 class="fw-bold mt-4">Ma contribution</h6>
+                            <p>J'ai réalisé l'audit initial, conçu l'architecture, configuré tous les équipements réseau et formé l'équipe IT interne à la maintenance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h6 class="fw-bold">Défis et solutions</h6>
+                        <p>Le défi principal était d'assurer une migration sans interruption de service. J'ai mis en place une stratégie de migration par phases et réalisé les opérations critiques pendant les week-ends.</p>
+                        
+                        <h6 class="fw-bold mt-4">Résultats</h6>
+                        <p>Augmentation de 60% des performances réseau, réduction de 90% des incidents de sécurité et mise en place d'une documentation complète pour faciliter la maintenance.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Site E-commerce</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenu du modal pour le projet 3 -->
+                    <div class="row">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="/api/placeholder/500/300" class="img-fluid rounded" alt="Site E-commerce">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Description du projet</h6>
+                            <p>Création d'une boutique en ligne complète pour une entreprise de produits artisanaux avec système de paiement sécurisé, gestion des stocks et interface d'administration.</p>
+                            
+                            <h6 class="fw-bold mt-4">Technologies utilisées</h6>
+                            <ul>
+                                <li>WordPress et WooCommerce</li>
+                                <li>Personnalisation PHP avancée</li>
+                                <li>Intégration Stripe et PayPal</li>
+                                <li>Optimisation SEO</li>
+                                <li>Système de recommandation de produits</li>
+                            </ul>
+                            
+                            <h6 class="fw-bold mt-4">Ma contribution</h6>
+                            <p>J'ai configuré l'ensemble de la solution, développé des extensions personnalisées et formé le client à l'utilisation du back-office.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h6 class="fw-bold">Défis et solutions</h6>
+                        <p>Le principal défi était d'automatiser la gestion des stocks entre le point de vente physique et la boutique en ligne. J'ai développé une extension personnalisée pour synchroniser l'inventaire en temps réel.</p>
+                        
+                        <h6 class="fw-bold mt-4">Résultats</h6>
+                        <p>La boutique génère 45% du chiffre d'affaires total de l'entreprise, avec une conversion des visiteurs de 3.8%, bien au-dessus de la moyenne du secteur.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plus de modals pour les autres projets -->
+    <!-- Modal Projet 4 -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Audit de Sécurité</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenu similaire aux autres modals -->
+                    <div class="row">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="/api/placeholder/500/300" class="img-fluid rounded" alt="Audit de Sécurité">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Description du projet</h6>
+                            <p>Réalisation d'un audit complet de sécurité pour une entreprise de services financiers, incluant tests d'intrusion, analyse de vulnérabilités et recommandations.</p>
+                            
+                            <h6 class="fw-bold mt-4">Méthodologie utilisée</h6>
+                            <ul>
+                                <li>Tests d'intrusion (black-box et white-box)</li>
+                                <li>Analyse statique et dynamique du code</li>
+                                <li>Scan de vulnérabilités réseau</li>
+                                <li>Tests d'ingénierie sociale</li>
+                                <li>Analyse des politiques de sécurité</li>
+                            </ul>
+                            
+                            <h6 class="fw-bold mt-4">Ma contribution</h6>
+                            <p>J'ai dirigé l'ensemble du projet d'audit, réalisé les tests techniques et rédigé le rapport final avec plan d'action.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h6 class="fw-bold">Résultats</h6>
+                        <p>Identification de 12 vulnérabilités critiques et 28 vulnérabilités de moindre importance. Mise en place d'un plan de remédiation qui a permis d'éliminer 100% des risques critiques en moins de 30 jours.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 5 -->
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Migration vers le Cloud</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenu du modal pour le projet 5 -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Projet 6 -->
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Système de Surveillance</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenu du modal pour le projet 6 -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section CTA -->
+    <section class="cta-section py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Vous avez un projet en tête ?</h2>
+            <p class="lead mb-4">Je suis disponible pour discuter de vos besoins en administration système et réseau.</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Me contacter</a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle avec Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script pour les filtres de projets -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion des filtres de projets
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Supprimer la classe active de tous les boutons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Ajouter la classe active au bouton cliqué
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    projectItems.forEach(item => {
+                        if (filter === 'all') {
+                            item.style.display = 'block';
+                        } else {
+                            if (item.getAttribute('data-category') === filter) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+  </main>
+  <footer class="bg-dark text-white pt-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5 class="mb-4">Thibault Guillonneau</h5>
+        <p>Passionné par l'informatique et par l'immensité des possibilités qu'elle propose.</p>
+      </div>
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h5 class="mb-4">Liens rapides</h5>
+        <ul class="list-unstyled">
+          <li><a href="/"         class="text-white">Accueil</a></li>
+          <li><a href="/about/"   class="text-white">À propos</a></li>
+          <li><a href="/projects/" class="text-white">Projets</a></li>
+          <li><a href="/contact/" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="mb-4">Restons connectés</h5>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/thibault-guillonneau/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/ThibaultG10">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4 bg-light">
+    <div class="text-center pb-3">
+      &copy; 2025 Thibault Guillonneau
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+---
+layout: layout.njk
+title: Accueil
+---
+<section class="hero-section">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold mb-4">
+      Candidature Alternance BAC +3 – Administrateur Système & Réseau
+      (à partir du 15/09/2025)
+    </h1>
+    <p class="lead mb-5">Enthousiaste à l'idée d'explorer les nouvelles technologies</p>
+    <a href="/projects/" class="btn btn-primary btn-lg">Voir mes projets</a>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Mes domaines d'expertise</h2>
+    <div class="row text-center">
+      {% set skills = [
+        { icon: "computer", title: "Configuration et Assemblage de PC",        text: "Adapté à vos besoins" },
+        { icon: "server",   title: "Création et Administration de Serveur",    text: "Linux et Windows Server" },
+        { icon: "network-wired", title: "Création de Réseau pour entreprise", text: "Équipements (Routeur, Switch)" },
+        { icon: "eye",      title: "Supervision",                              text: "Ticketing, Incidents, Investigation et Résolution" }
+      ] %}
+      {% for skill in skills %}
+        <div class="col-md-3 mb-4">
+          <div class="skill-icon"><i class="fa-solid fa-{{ skill.icon }}"></i></div>
+          <h4>{{ skill.title }}</h4>
+          <p class="text-muted">{{ skill.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Projets en vedette</h2>
+    <div class="row">
+      {% for n in [1,2,3] %}
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="/api/placeholder/400/300" class="card-img-top" alt="Projet {{ n }}">
+            <div class="card-body">
+              <h5 class="card-title">Projet {{ n }}</h5>
+              <p class="card-text">Description courte du projet {{ n }}.</p>
+              <a href="/projects/" class="btn btn-sm btn-outline-primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-5">
+      <a href="/projects/" class="btn btn-primary">Tous mes projets</a>
+    </div>
+  </div>
+</section>
